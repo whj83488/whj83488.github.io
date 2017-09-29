@@ -1,0 +1,83 @@
+/*
+* @Author: lenovo
+* @Date:   2017-09-25 11:23:59
+* @Last Modified by:   lenovo
+* @Last Modified time: 2017-09-29 16:18:36
+*/
+/* div{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+} */
+img{
+	width: 200px;
+	height: 200px;
+}
+.box{
+	width:100px;
+	height: 100px;
+	background-color: yellow;
+}
+.box1{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	margin: 50px auto;
+	transition:all 2s cubic-bezier(0, 0.38, 0.2, 1.65) 2s;
+	
+}
+.box1:hover{
+	box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+	transform: translate(500px,-200px);
+	transition:all 2s;
+}
+.box11{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	background: url('11111111111111.png') no-repeat 10% 10%;
+}
+#box123{
+	font-size: 30px;
+	/* text-decoration: underline; *//* 下划线 */
+	text-decoration: line-through;/* 贯穿线 */
+
+}
+.whj{
+
+}
+textarea{
+	/* resize：是否允许用户进行大小的重置
+		none：不允许
+		both：既允许水平方向重置，也可垂直方向重置
+		horizontal：水平方向重置
+		vertical：垂直方向重置
+		相同的属性只显示下面的属性 */
+	resize: none;
+
+}
+/* canvas{
+	height: 200px;
+	width: 200px;
+	background-color: yellow;
+} */
+@font-face {
+  font-family: 'iconfont';  /* project id 431752 */
+  src: url('http://at.alicdn.com/t/font_431752_tow4qmhdqp2b7qfr.eot');
+  src: url('http://at.alicdn.com/t/font_431752_tow4qmhdqp2b7qfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_431752_tow4qmhdqp2b7qfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_431752_tow4qmhdqp2b7qfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_431752_tow4qmhdqp2b7qfr.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: 'iconfont';
+ 	font-style: normal;
+	font-size: 30px;
+	color: yellow;
+	
+}
+body i{
+	margin-top: 30px;
+	font-size: 40px;
+	
+}

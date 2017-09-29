@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html基础</title>
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+	<div></div>
+	<div class="box"></div>
+	<div class="box1"></div>
+	<img src="img/3.jpg" alt="">
+	<a href="H:\HTML9.25/demo.html">your mother</a><!-- 绝对路径1 -->
+	<a href="http://www.jiegeng.com/">your father</a><!-- 绝对路径2 -->
+	<a href="https://jx.tmall.com/?ali_trackid=2:mm_97593450_9494677_113542833:1506320539_242_1876891864">your family</a><!-- 绝对路径3 -->
+	<a href="demo.html">your mother1</a><!-- 相对路径1 -->
+	<a href="新建文件夹/img/3.jpg">your father1</a><!-- 相对路径2 -->
+	<a href="新建文件夹/css/demo.css">your family1</a><!-- 相对路径3 -->
+	<div class="box11"></div>
+	<div id="box123">哈哈哈哈</div>
+	<hr width="" size="" color="">
+	<!-- 宽度	高度	颜色 -->
+	标题标签：块标签
+	<h1>一级标题</h1>
+	<h2>二级标题</h2>
+	<h3>三级标题</h3>
+	<h4>四级标题</h4>
+	<h5>五级标题</h5>
+	<h6>六级标题</h6>
+	段落标签：
+	<p>撒打算你的卡聚少离多卡机了睡    大街阿卡丽睡大街埃里克就</p>
+	注意：1.一般不嵌套其他标签
+	<pre>撒打算你的卡聚少离多卡机       了睡大街阿卡丽睡大街埃里克就</pre>
+	区别：pre标签会按照编辑器中预先定义好的格式来显示
+	列表标签：
+	1.无序列表 list-style:none;<br>
+	circle 空心圆	disc 实心圆	aquare 方形
+	<ul type="square">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	2.有序列表：a A 1 i I
+	<ol type="I">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ol>
+	3.自定义列表：dt条目 dd内容
+	<dl>
+		<dt>第一章</dt>
+		<dd>第一节</dd>
+		<dd>第二节</dd>
+		<dt>第一章</dt>
+		<dd>第一节</dd>
+		<dd>第二节</dd>
+	</dl>
+	五、表单标签
+	<form action="aa.php" method="get">
+		<!-- action:提交的位置  -->
+		<!-- method:提交的方式  get:数据少（不安全），post:数据（安全）-->
+		<fieldset>
+			<legend>基本信息</legend>
+		王伟:<input type="text" placeholder="王红的爱人" size="80" maxlength="10"   class="whj" name="user" value=""><br>readonly="disabled"<br>
+		密码:<input type="password" placeholder="请输入密码"><br>
+		上传文件：<input type="file"><br>
+		<!-- 输入框：type="text" placeholder 提示文本	size:控件宽度	maxlength：最大输入的字符数	 disabled：表示标签的禁用 reabonly：只读属性
+		name:后台获取控件时需要的 value:前台页面操作用此属性-->
+		<!-- Readonly和disabled的区别
+		Readonly只针对input(text / password)和textarea有效，而disabled对于所有的表单元素都有效，包括select, radio, checkbox, button等。 -->
+		<!-- 多选按钮  checked 默认选中-->
+		请选择你喜欢的音乐:<br>
+		<input type="checkbox" checked="">情歌<br>
+		<input type="checkbox">大舌头<br>
+		<input type="checkbox">垃圾<br>
+		<!-- 单选按钮 注意：要加相同的name属性才能实现单选-->
+		请选择你居住的城市：<br>
+		<input type="radio" name="city">太原<br>
+		<input type="radio" name="city">天上<br>
+		<input type="radio" name="city">人间<br>
+		<input type="radio" name="city" checked="">哈哈<br>
+		<!-- 下拉框		size:控制显示个数	multiple:显示多选-->
+		人属于什么:<select name="" id="" size="2" multiple="">
+			<option value="">人</option>
+			<option value="">狗</option>
+			<option value="">猫</option>
+		</select><br>
+		</fieldset>
+		<!-- 文本域  -->
+		留言板:<textarea name="" id="" cols="30" rows="10" class="whj1"></textarea><br>
+		<!-- 提交按钮 	submit:提交按钮		reset:重置按钮 button:自定义按钮-->
+		<input type="submit"><br>
+		<input type="reset"><br>
+		<input type="buttn" value="搜索"><br>
+		日期：
+		年月日：<input type="date"><br>
+		年月：<input type="month"><br>
+		年周：<input type="week"><br>
+		时分：<input type="time"><br>
+		年月日时分：<input type="datatime-local"><br>
+		范围：<br>
+		<!-- min:最小值	max:最大值	step：步长	value：默认值 -->
+		数字范围：<input type="number" min="0" max="10" step="2" value="0"><br>
+		滑块范围：<br>
+		<input type="range" min="0" max="10" step="2" value="0"><br>
+		正则验证：<br>
+		email（邮箱）：<input type="email"><br>
+		url（网址<!-- 快捷方式 -->）：<input type="url"><br>
+		tel（电话）：<input type="tel"><br>
+		颜色：<br>
+		<input type="color"><br>
+		h5中语义化的标签<br>
+		<header>头部的标签</header>块标签
+		<nav>导航标签</nav>块元素
+		<aside>侧导航</aside>
+		<footer>底部</footer>
+		<article>独立的文章内容</article>
+		<main>主体标签</main>
+		<section>某一部分</section>
+		article,aside,footer,header,hgroup,
+		
+		h5中新增标签:<br>
+		音频：
+		<!-- controls:向用户显示控件
+			 loop：循环播放
+			 autoplay：页面加载完成后自动播放 -->
+		<audio src="" controls="" loop="" autoplay=""></audio><br>
+		视频：<video src="" controls="" loop="" autoplay=""></video><br>
+		画布：<canvas style="width: 200px; height: 200px; background-color: yellow;"></canvas><br>
+		进度条：
+		<progress min="0" max="10" value="4"></progress><br>
+		范围程度：
+		<meter min="0" max="10" value="4"></meter><br>
+		代码：
+		<code>
+			代码
+		</code>
+	</form>
+	<i class="iconfont">&#xe600;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont">&#xe614;</i>
+	<i class="iconfont icon-niu"></i>
+		
+</body>
+</html>
